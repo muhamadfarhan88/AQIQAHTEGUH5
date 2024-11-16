@@ -14,12 +14,12 @@ $(document).ready(function() {
     // Layer Peta
     var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 20,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution: '&copy; <a href="https://www.google.com/maps?q=teguh aqiqah">teguhaqiqah</a> contributors'
     }).addTo(map);
 
     var osmHotLayer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
         maxZoom: 20,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution: '&copy; <a href="https://www.google.com/maps?q=teguh aqiqah">teguhaqiqah</a> contributors'
     });
 
     // Kontrol Layer
