@@ -19,9 +19,9 @@ module.exports = {
         'barlow-cond': ['Barlow Condensed', 'sans-serif']
       },
       backgroundImage: {
-        'header-image': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/header-image.png')",
-        'banner-image': "linear-gradient(0deg, rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url('../assets/images/banner-image.png')",
-        'booking-image': "linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url('../assets/images/booking-image.png')"
+        'header-image': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/Designer (1).webp')",
+        'banner-image': "linear-gradient(0deg, rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url('../assets/images/Designer (3).webp')",
+        'booking-image': "linear-gradient(rgba(16, 16, 16, 0.5), rgba(16, 16, 16, 0.5)), url('../assets/images/Designer (2).webp')"
       },
       gridTemplateColumns: {
         'footer': '3fr repeat(3, 2fr)'
