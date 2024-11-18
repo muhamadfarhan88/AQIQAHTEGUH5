@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/svg+xml/webp" href="../assets/images/logonavbar.png" />
+        <title>Login TA</title>
+        <meta name="description" content="">
+    <!-- google fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- swiper js & tailwind css-->
+    <link rel="stylesheet" href="../dist/main.css">
+    
+  </head>
+  <body class="min-h-screen bg-gray-100 relative overflow-hidden">
+    <img src="../assets/images/img login/wave.png" class="fixed inset-0 h-full w-full object-cover" style="z-index: -2;" alt="Background wave" />
+    <div class="absolute inset-0" style="z-index: -1;"></div>
+    <div class="w-full min-h-screen flex flex-col justify-center items-center p-2 sm:p-4 md:p-6 lg:grid lg:grid-cols-2 lg:gap-4">
+      <div class="flex justify-center items-center mb-4 lg:mb-0">
+        <img src="../assets/images/img login/unlock.svg" class="w-full max-w-[200px] sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg hover:scale-110 transition-all duration-500 transform" alt="Unlock illustration" />
+      </div>
+      <form id="loginform" class="w-full max-w-[340px] sm:max-w-md bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-md">
+        <div class="flex justify-center mb-4 sm:mb-6">
+          <img src="../assets/images/img login/avatardepan.svg" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" alt="Avatar" />
+        </div>
+        <h2 class="mb-4 sm:mb-6 font-gilda font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 text-center">
+          Welcome To Teguh Aqiqah
+        </h2>
+        <div class="relative mb-4 sm:mb-6 font-mono">
+          <i for="loginuseradmin" class="fa fa-user absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 left-3"></i>
+          <input id="loginuseradmin" type="text" placeholder="Username" class="w-full pl-8 sm:pl-10 pr-3 py-1 sm:py-2 border-b-2 font-inter focus:outline-none focus:border-orange-600 transition-all duration-300 text-sm sm:text-base md:text-lg" />
+        </div>
+        <div class="relative mb-4 sm:mb-6">
+          <i for="passwordL" class="fa fa-lock absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 left-3"></i>
+          <input id="passwordL" type="password" placeholder="Password" class="w-full pl-8 sm:pl-10 pr-3 py-1 sm:py-2 border-b-2 font-inter focus:outline-none focus:border-orange-600 transition-all duration-300 text-sm sm:text-base md:text-lg" />
+          <i class="fa fa-eye absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 right-2 cursor-pointer"></i>
+        </div>
+        
+        <!-- Role Selection and Forgot Password Row -->
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4 sm:mb-6 font-barlow">
+          <div class="flex items-center gap-2">
+            <label for="role" class="text-xs sm:text-sm md:text-base text-gray-600 font-bold">Role:</label>
+            <select id="role" class="text-xs sm:text-sm md:text-base text-gray-600 border-b-2 border-gray-300 focus:border-orange-600 focus:outline-none transition-all duration-300 py-1 px-2">
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+          <a href="../src/forgot-password.html" class="text-xs sm:text-sm md:text-base text-gray-600 hover:text-orange-600 font-bold transition-colors duration-300">
+            Forgot password?
+          </a>
+        </div>
+
+        <div class="flex flex-col gap-2 sm:gap-4 font-mont">
+          <button type="submit" class="w-full py-2 px-4 bg-orange-600 rounded-full text-white font-bold uppercase text-center text-xs sm:text-sm md:text-base transition-all duration-300 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
+            Login
+          </button>
+          <a href="../src/register.html" class="w-full py-2 px-4 bg-orange-600 rounded-full text-white font-bold uppercase text-center text-xs sm:text-sm md:text-base transition-all duration-300 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
+            Register
+          </a>
+          <a href="../src/index.html" class="w-full py-2 px-4 rounded-full text-orange-800 font-bold uppercase text-center text-xs sm:text-sm md:text-base transition-all duration-300 hover:text-orange-500">
+            Beranda
+          </a>
+        </div>
+      </form>
+    </div>
+  </body>
+  
+</html>
