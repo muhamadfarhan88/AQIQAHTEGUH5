@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/svg+xml/webp" href="../assets/images/logonavbar.png" />
+        <title>Service</title>
+        <meta name="description" content="">
+        <!-- google fonts -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- font awesome cdn   -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- slick slider -->
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <!-- date picker -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- swiper js & tailwind css-->
+        <link rel="stylesheet" href="../dist/main.css">
+        <!-- map leaflet css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    </head>
+    <body>
+        <!--header & navigation-->
+        <header id="home" class = "flex flex-col min-h-screen overflow-hidden bg-center bg-no-repeat bg-cover bg-header-image">
+            <div class = "header-top bg-eerie-black min-h-[48px] flex items-center font-barlow py-3">
+                <div class="container max-w-[1200px] mx-auto lg:flex lg:justify-between">
+                    <div class = "flex flex-col items-center header-top-left sm:flex-row sm:justify-center lg:justify-start">
+                        <div class = "flex py-1">
+                            <img src = "../assets/images/icons/map-marker.svg" class = "w-[10px] mx-2" alt = "">
+                            <span class = "text-sm font-light text-platinum opacity-60">TeguhAqiqah,  Indonesia</span>
+                        </div>
+                        <div class = "flex py-1 md:ms-5 lg:ms-[72px]">
+                            <img src = "../assets/images/icons/call-calling.svg" class = "w-3 mx-2" alt = "">
+                            <span class = "text-sm font-light text-platinum opacity-60">+62 812 8893 0761</span>
+                        </div>
+                    </div>
+                    
+                    <ul class = "flex items-center justify-center py-1">
+                        <li class = "flex items-center justify-center w-3 h-3 mx-2 md:w-4 md:h-4">
+                            <a href = "https://www.instagram.com/teguh_aqiqah" class = "transition duration-300 ease-in-out hover:opacity-80" target="_blank" rel="noopener noreferrer">
+                                <img src = "../assets/images/icons/instagram.svg" alt = "Instagram">
+                            </a>
+                        </li>
+                        <li class = "flex items-center justify-center w-3 h-3 mx-2 md:w-4 md:h-4">
+                            <a href = "https://wa.me/6281288930761?text=Selamat datang, ada yang bisa kami bantu?" class = "transition duration-300 ease-in-out hover:opacity-80" target="_blank" rel="noopener noreferrer">
+                                <img src = "../assets/images/icons/whatsapp1.svg" alt = "whatsapp">
+                            </a>
+                        </li>
+                        <li class = "flex items-center justify-center w-3 h-3 mx-2 md:w-4 md:h-4">
+                            <a href = "#" class = "transition duration-300 ease-in-out hover:opacity-80" target="_blank" rel="noopener noreferrer">
+                                <img src = "../assets/images/icons/facebook.svg" alt = "facebook">
+                            </a>
+                        </li>
+                        <li class = "font-medium uppercase text-white ms-2 text-xs md:text-sm tracking-widest mt-[2px]">follow us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "flex flex-1 px-3 header-main">
+                <div class="container max-w-[1200px] mx-auto flex flex-col">
+                    <nav class = "py-5 md:flex md:justify-between">
+                        <div class = "flex justify-between">
+                            <a href = "login.html" class = "flex items-center font-gilda text-[28px] font-normal text-lion"> <img src="../assets/images/logonavbar.png" alt="Logo" class="h-12 md:hidden">Teguh<span class = "text-white">Aqiqah.</span></a>
+                            <button type = "button" class = "text-white md:hidden" id = "navbar-show-btn">
+                                <i class = 'fas fa-bars'></i>
+                            </button>
+                        </div>
+                        <div class = "navbar-box fixed top-0 right-0 w-[280px] h-full bg-white p-5 flex flex-col items-center font-barlow-cond translate-x-full transition duration-300 ease-in-out md:relative md:translate-x-0 md:bg-transparent md:flex-row md:h-auto md:w-auto md:p-0">
+                            <button type = "button " class = "absolute top-[18px] right-[18px] z-50 text-2xl hover:rotate-180 transition duration-300 ease-in-out md:hidden" id = "navbar-hide-btn">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                            <ul class = "flex flex-col w-full text-center mt-[60px] md:flex-row md:mt-0">
+                                <li class="py-3 border-b-[1px] border-solid md:py-0 md:border-none">
+                                    <a href = "#home" class = "text-eerie-black uppercase text-md tracking-[.12em] font-medium hover:text-lion transition duration-300 ease-in-out md:mx-[14px] xl:mx-5 2xl:mx-6 md:text-white">home</a>
+                                </li>
+                                <li class="py-3 border-b-[1px] border-solid md:py-0 md:border-none">
+                                    <a href = "#about-us" class = "text-eerie-black uppercase text-md tracking-[.12em] font-medium hover:text-lion transition duration-300 ease-in-out md:mx-[14px] xl:mx-5 2xl:mx-6 md:text-white">about</a>
+                                </li>
+                                <li class="py-3 border-b-[1px] border-solid md:py-0 md:border-none">
+                                    <a href = "#service" class = "text-eerie-black uppercase text-md tracking-[.12em] font-medium hover:text-lion transition duration-300 ease-in-out md:mx-[14px] xl:mx-5 2xl:mx-6 md:text-white">service</a>
+                                </li>
+                                <li class="py-3 border-b-[1px] border-solid md:py-0 md:border-none">
+                                    <a href = "#gallery" class = "text-eerie-black uppercase text-md tracking-[.12em] font-medium hover:text-lion transition duration-300 ease-in-out md:mx-[14px] xl:mx-5 2xl:mx-6 md:text-white">gallery</a>
+                                </li>
+                                <li class="py-3 md:py-0">
+                                    <a href = "#contact" class = "text-eerie-black uppercase text-md tracking-[.12em] font-medium hover:text-lion transition duration-300 ease-in-out md:mx-[14px] xl:mx-5 2xl:mx-6 md:text-white">contact</a>
+                                </li>
+                            </ul>
+
+                            <a href = "login.html" class = "w-full h-[42px] px-7 uppercase flex items-center justify-center bg-lion tracking-widest font-medium text-white mt-4 hover:bg-lion-dark md:mt-0 md:min-w-[140px] ms-6">know more</a>
+                        </div>
+                    </nav>
+                    <div class="flex flex-col items-center justify-center flex-1 py-12 text-center">
+                        <h1 class = "text-lg xs:text-[32px] text-white font-gilda tracking-[.04em] uppercase font-normal max-w-[800px] md:text-[42px] leading-relaxed">The special moments of aqiqah, catering, and qurban are something that every family looks forward to.</h1>
+                        <a href = "login.html" class = "min-w-[158px] min-h-[48px] bg-transparent uppercase text-white border-2 font-barlow tracking-widest text-base font-normal inline-flex items-center justify-center mt-9 md:mt-[60px] hover:bg-white hover:text-black transition duration-300 ease-in-out">know more</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--about-->
+        <section id="about-us" class = "bg-nero min-h-[640px] mx-auto px-3 flex items-center py-16">
+            <div class="container max-w-[1200px] mx-auto grid md:grid-cols-2 gap-14">
+                <div class = "flex flex-col items-start justify-center">
+                    <h3 class = "text-coyote font-normal opacity-70 tracking-[.25em] font-barlow-cond text-xl sm:text-[22px] uppercase">welcome to</h3>
+                    <h1 class = "font-gilda text-2xl sm:text-[38px] tracking-[.04em] font-normal py-3 text-white mb-3">Teguh Aqiqah, Catering and Qurban</h1>
+                    <p class = "text-base font-light text-justify text-white opacity-60 font-barlow sm:text-lg">Teguh Aqiqah is here to meet the needs. In recent years, Teguh Aqiqah has provided high-quality services to meet the needs of aqiqah, catering and qurban throughout Indonesia.</p>
+                    <a href = "login.html" class = "bg-lion font-barlow px-4 min-w-[158px] min-h-[48px] inline-flex items-center justify-center uppercase text-white transition duration-300 ease-in-out hover:bg-lion-dark mt-8 tracking-widest">know more</a>
+                </div>
+
+                <div class = "overflow-hidden welcome-slider">
+                    <div class = "h-[425px]">
+                        <img class = "object-cover w-full h-full" src = "../assets/images/welcome-goat-1.jpg" alt = "welcome image">
+                    </div>
+                    <div class = "h-[425px]">
+                        <img class = "object-cover w-full h-full" src = "../assets/images/welcome-goat-2.webp" alt = "welcome image">
+                    </div>
+                    <div class = "h-[425px]">
+                        <img class = "object-cover w-full h-full" src = "../assets/images/welcome-goat-3.jpg" alt = "welcome image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--hero section-->
+        <section id="hero" class = "min-h-[600px] py-16 flex flex-col items-center justify-center bg-banner-image bg-center bg-cover bg-fixed bg-no-repeat px-3">
+            <div class = "container max-w-[1200px] mx-auto text-white text-center">
+                <h2 class = "font-gilda font-normal text-2xl sm:text-[38px] tracking-[.04em] mb-3">Enjoy quality Aqiqah, Catering and Qurban services.</h2>
+                <div class="flex items-center justify-center">
+                    <img src = "../assets/images/decorated-pattern.svg" alt = "">
+                </div>
+                <p class="mt-9 tracking-[.04em] text-lg sm:text-2xl font-barlow font-light max-w-[600px] mx-auto leading-7 sm:leading-9">Everything you need to celebrate special moments with special aqiqah, catering and qurban.</p>
+                <a href = "#serviceACQ" class = "bg-lion font-barlow px-4 min-w-[158px] min-h-[48px] inline-flex items-center justify-center uppercase text-white transition duration-300 ease-in-out hover:bg-lion-dark mt-8 tracking-widest">explore now</a>
+            </div>
+        </section>
+        <!--service-->
+        <section id="service" class = "px-3 py-16">
+            <div class="container max-w-[1200px] mx-auto">
+                <h2 class = "font-gilda font-normal text-3xl sm:text-[46px] tracking-[.04em] text-coyote text-center mb-3">Aqiqah, Catering and Qurban Services</h2>
+                <div class="flex items-center justify-center">
+                    <img src = "../assets/images/decorated-pattern-2.svg" alt = "">
+                </div>
+                <div class = "grid gap-10 py-10 md:grid-cols-2">
+                    <p class = "text-black opacity-60 font-light text-base sm:text-lg font-barlow first-letter:text-4xl first-letter:font-bold first-letter:tracking-[.03em]">Teguh Aqiqah has developed various services, offering attractive Aqiqah, Catering and Qurban solutions for families and individuals. With a commitment to provide the best quality.</p>
+
+                    <ul class = "py-5 bg-lion sm:py-9 px-7">
+                        <li class = "grid items-center grid-cols-[32px_auto] my-1">
+                            <img src = "../assets/images/icons/goat.svg" alt = "" class="filter invert">
+                            <span class = "text-base font-light text-white font-barlow">The best price for a memorable Aqiqah celebration.</span>
+                        </li>
+                        <li class = "grid items-center grid-cols-[32px_auto] my-1">
+                            <img src = "../assets/images/icons/goat.svg" alt = "" class="filter invert">
+                            <span class = "text-base font-light text-white font-barlow">The best place to hold a catering event with your loved ones.</span>
+                        </li>
+                        <li class = "grid items-center grid-cols-[32px_auto] my-1">
+                            <img src = "../assets/images/icons/goat.svg" alt = "" class="filter invert">
+                            <span class = "text-base font-light text-white font-barlow">The right solution to carry out the qurban worship with full meaning. </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="serviceACQ" class = "grid sm:grid-cols-2 lg:grid-cols-3 gap-[4px]">
+                    <a href = "#" class = "object-cover relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b from-black/25 to-black/75 hover:before before:absolute before:content-[''] before:top-3 before:left-3 before:right-3 before:bottom-3 before:border-white before:border-2 before:border-solid before:z-10 before:opacity-0 hover:before:opacity-100 before:transition before:duration-300 before:ease-in-out">
+                        <img src = "../assets/images/aqiqah.jpg" class = "object-cover w-full h-full" alt = "aqiqah">
+                        <div class = "absolute bottom-0 z-10 w-full px-4 text-xl font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-2xl font-barlow mb-14">Aqiqah</div>
+                    </a>
+
+                    <a href = "#" class = "object-cover relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b from-black/25 to-black/75 hover:before  before:absolute before:content-[''] before:top-3 before:left-3 before:right-3 before:bottom-3 before:border-white before:border-2 before:border-solid before:z-10 before:opacity-0 hover:before:opacity-100 before:transition before:duration-300 before:ease-in-out">
+                        <img src = "../assets/images/catering.jpg" class = "object-cover w-full h-full" alt = "catering">
+                        <div class = "absolute bottom-0 z-10 w-full px-4 text-xl font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-2xl font-barlow mb-14">Catering</div>
+                    </a>
+
+                    <a href = "#" class = "object-cover relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b from-black/25 to-black/75 hover:before  before:absolute before:content-[''] before:top-3 before:left-3 before:right-3 before:bottom-3 before:border-white before:border-2 before:border-solid before:z-10 before:opacity-0 hover:before:opacity-100 before:transition before:duration-300 before:ease-in-out">
+                        <img src = "../assets/images/qurban.jpg" class = "object-cover w-full h-full" alt = "qurban">
+                        <div class = "absolute bottom-0 z-10 w-full px-4 text-xl font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-2xl font-barlow mb-14">Qurban</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!--footer-->
+        <footer id="footer">
+            <div class="px-3 py-16 bg-nero">
+                <div class = "grid max-w-[1200px] mx-auto gap-8 text-center md:grid-cols-2 md:text-start lg:grid-cols-footer">
+                    <div class="md:me-2 lg:me-3">
+                        <a href="index.html" class="flex justify-center md:justify-start items-center text-lion font-gilda font-normal text-2xl tracking-[.04em]">
+                            <img src="../assets/images/logonavbar.png" alt="Teguh Aqiqah Logo" class="w-auto h-12 mr-2">
+                            Teguh<span class="text-white">Aqiqah.</span>
+                        </a>
+                        <p class="text-white font-light font-barlow text-base mt-3 max-w-[480px] mx-auto md:ms-0">Welcome to Teguh Aqiqah, the best service provider for aqiqah, catering, and qurban. We are ready to serve high-quality dishes with special flavors, making every special moment unforgettable.</p>
+                    </div>
+
+                    <div>
+                        <h4 class = "inline-block font-gilda tracking-[.04em] text-lg text-white capitalize relative after:absolute after:content-[''] after:left-0 after:-bottom-0 after:h-[1px] after:w-full after:bg-coyote pb-1 mb-4">quick link</h4>
+                        <ul>
+                            <li class = "my-2">
+                                <a href = "#service" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">our services</a>
+                            </li>
+                            <li class = "my-2">
+                                <a href = "#about-us" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">about us</a>
+                            </li>
+                            <li class = "my-2">
+                                <a href = "#events" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">event</a>
+                            </li>
+                            <li class = "my-2">
+                                <a href = "#blog" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class = "inline-block font-gilda tracking-[.04em] text-lg text-white capitalize relative after:absolute after:content-[''] after:left-0 after:-bottom-0 after:h-[1px] after:w-full after:bg-coyote pb-1 mb-4">explore</h4>
+                        <ul>
+                            <li class = "my-2">
+                                <a href = "#gallery" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">gallery</a>
+                            </li>
+                            <li class = "my-2">
+                                <a href = "#feature" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">features</a>
+                            </li>
+                            <li class = "my-2">
+                                <a href = "#contact" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">contact us</a>
+                            </li>
+                            <li class = "my-2">
+                                <a href = "#map1" class = "text-base font-light text-white capitalize transition duration-300 ease-in-out font-barlow hover:text-white/50">location map</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class = "inline-block font-gilda tracking-[.04em] text-lg text-white capitalize relative after:absolute after:content-[''] after:left-0 after:-bottom-0 after:h-[1px] after:w-full after:bg-coyote pb-1 mb-4">contact</h4>
+                        <ul>
+                            <li class = "my-2 grid grid-cols-[40px_auto] justify-center md:justify-start">
+                                <span class = "text-white">
+                                    <i class = "fas fa-map-marker-alt"></i>
+                                </span>
+                                <span class = "font-light text-white/50">TeguhAqiqah, Indonesia</span>
+                            </li>
+                            <li class = "my-2 grid grid-cols-[40px_auto] justify-center md:justify-start ">
+                                <span class = "text-white">
+                                    <i class = "fas fa-phone"></i>
+                                </span>
+                                <span class = "font-light text-white/50">+62 812 8893 0761</span>
+                            </li>
+                            <li class = "my-2 grid grid-cols-[40px_auto] justify-center md:justify-start">
+                                <span class = "text-white">         
+                                    <i class = "fas fa-envelope"></i>
+                                </span>
+                                <span class = "font-light text-white/50">info.teguhaqiqah@mail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "py-4 font-normal tracking-widest text-center text-white uppercase font-barlow bg-nero-dark">
+                <p class = "text-sm">&copy; copyright 2024 by TeguhAqiqah</p>
+            </div>
+        </footer>
+
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <!-- Date picker -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- slick slide js -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--partial-->
+        <script src="../src/JS/script.js"></script>
+        
+    </body>
+</html>
