@@ -10,7 +10,8 @@ module.exports = {
         'platinum': '#E0E0E0',
         'nero': '#202020',
         'nero-dark': "#1E1E1E",
-        'light-gray': "#e9e9e9"
+        'light-gray': "#e9e9e9",
+        
       },
       fontFamily: {
         'barlow': ['Barlow', 'sans-serif'],
