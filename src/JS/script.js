@@ -1,7 +1,18 @@
 // Navbar
-$(document).ready(function(){
+$(document).ready(function() {
+    // Tampilkan navbar
     $('#navbar-show-btn').click(() => $('.navbar-box').removeClass('translate-x-full'));
+
+    // Sembunyikan navbar
     $('#navbar-hide-btn').click(() => $('.navbar-box').addClass('translate-x-full'));
+
+    // Menutup navbar saat mengklik di luar navbar
+    $(document).click(function(event) {
+        // Cek apakah klik terjadi di luar navbar
+        if (!$(event.target).closest('.navbar-box, #navbar-show-btn').length) {
+            $('.navbar-box').addClass('translate-x-full');
+        }
+    });
 
 
 // swiper slider
@@ -38,6 +49,15 @@ sendOrderLinks.forEach(link => {
                 modal.querySelector('[data-modal-toggle="crud-modal-package"]').addEventListener('click', function() {
                     modal.classList.add('hidden');
                     modal.remove();
+                });
+
+                // Tambahkan event listener untuk menutup modal saat klik di luar modal
+                modal.addEventListener('click', function(event) {
+                    // Cek apakah target klik adalah modal itu sendiri
+                    if (event.target === modal) {
+                        modal.classList.add('hidden');
+                        modal.remove();
+                    }
                 });
             })
             .catch(error => console.error('Error loading modal:', error));
