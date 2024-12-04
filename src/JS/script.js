@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('#navbar-hide-btn').click(() => $('.navbar-box').addClass('translate-x-full'));
 
 
-    // swiper slider
+// swiper slider
     $('.welcome-slider').slick({
         dots: true,
         infinite: true,
@@ -43,3 +43,5 @@ sendOrderLinks.forEach(link => {
             .catch(error => console.error('Error loading modal:', error));
     });
 });
+
+
