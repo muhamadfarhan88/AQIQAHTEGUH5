@@ -65,3 +65,16 @@ sendOrderLinks.forEach(link => {
 });
 
 
+const accountButton = document.getElementById('account-button');
+        const dropdown = document.getElementById('dropdown');
+
+        accountButton.addEventListener('click', () => {
+            dropdown.classList.toggle('hidden');
+        });
+
+        // Menutup dropdown jika klik di luar
+        window.addEventListener('click', (event) => {
+            if (!accountButton.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.add('hidden');
+            }
+        });
