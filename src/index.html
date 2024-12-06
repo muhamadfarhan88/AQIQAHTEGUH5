@@ -99,7 +99,7 @@
                         <div class="relative inline-block text-left">
                             <button id="dropdownAvatarNameButton" class="text-eerie-black uppercase text-md tracking-[.12em] font-medium hover:text-lion transition duration-300 ease-in-out md:mx-[14px] xl:mx-5 2xl:mx-6 md:text-white flex items-center" type="button" onclick="toggleDropdown()">
                                 <span class="sr-only">Open user menu</span>
-                                <img class="w-8 h-8 me-2 rounded-full" src="../assets/images/img login/avatar1.svg" alt="user photo">
+                                <img class="w-8 h-8 me-2 rounded-full" src="../assets/images/avatar/avatar1.svg" alt="user photo">
                                 Bonnie Green
                                 <svg id="chevronIcon" class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -107,24 +107,24 @@
                             </button>
 
                 <!-- Dropdown Menu -->
-                    <div id="dropdownAvatarName" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 absolute left-0 mt-2">
-                        <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                    <div id="dropdownAvatarName" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-60 absolute left-0 mt-2">
+                        <div class="px-4 py-3 text-sm text-gray-900">
                             <div class="font-medium">Pro User</div>
                             <div class="truncate">name@example.com</div>
                         </div>
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                            <ul class="py-2 text-sm text-gray-700">
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Akun</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Pesanan</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Pengaturan</a>
                                 </li>
                             </ul>
                             <div class="py-2">
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" onclick="signOut()">Keluar</a>
                             </div>
                         </div>
                     </div>
@@ -227,19 +227,19 @@
 
                 <form class = "my-16 max-w-[824px] mx-auto">
                     <div class = "my-3">
-                        <input type = "text" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full" placeholder="Nama Lengkap atau Nama ID">
+                        <input type = "text" id="username" name="username" autocomplete="username" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full" placeholder="Nama Lengkap atau Nama ID">
                     </div>
 
                     <div class = "grid md:grid-cols-2 md:my-3 md:gap-x-10">
-                        <input type = "text" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full my-3" placeholder="Nomor Whastapp">
+                        <input type = "number" id="whatsapp" name="whatsapp" autocomplete="tel" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full my-3" placeholder="Nomor Whastapp">
 
-                        <input type = "text" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full my-3" placeholder="Alamat Email">
+                        <input type = "email" id="email" name="email" autocomplete="email" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full my-3" placeholder="Alamat Email">
                     </div>
 
                     <div class = "grid md:grid-cols-2 md:my-3 md:gap-x-10">
-                        <input type = "text" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full my-3" placeholder="Detail Deskripsi">
+                        <input type = "text" id="description" name="description" autocomplete="off" class = "outline-none py-4 px-5 bg-transparent caret-white text-white text-lg tracking-[.04em] font-light font-barlow placeholder:text-white border-white border-solid border-b-[1px] w-full my-3" placeholder="Detail Deskripsi">
 
-                        <select class = "outline-none py-4 px-5 bg-transparent text-white text-lg tracking-[.04em] font-light font-barlow border-white border-solid border-b-[1px] w-full my-3">
+                        <select id="category" name="category" class = "outline-none py-4 px-5 bg-transparent text-white text-lg tracking-[.04em] font-light font-barlow border-white border-solid border-b-[1px] w-full my-3">
                             <option selected disabled>Pilih</option>
                             <option class = "bg-black/30" value="1">Pesanan</option>
                             <option class = "bg-black/30" value="2">Pembayaran</option>

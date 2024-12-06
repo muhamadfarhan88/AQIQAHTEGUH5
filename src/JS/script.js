@@ -81,4 +81,15 @@ window.onclick = function(event) {
     }
 }
 
-        
+//log out
+function toggleDropdown() {
+    const dropdown = document.getElementById('dropdownAvatarName');
+    dropdown.classList.toggle('hidden');
+}
+
+function signOut() {
+    // Here you can add your sign-out logic, such as clearing user data or redirecting to a login page
+    alert('You have signed out successfully!');
+    // Example: Redirect to login page
+    // window.location.href = '/login';
+}
