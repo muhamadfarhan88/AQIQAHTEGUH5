@@ -65,16 +65,20 @@ sendOrderLinks.forEach(link => {
 });
 
 
-const accountButton = document.getElementById('account-button');
-        const dropdown = document.getElementById('dropdown');
+function toggleDropdown() {
+    const dropdown = document.getElementById('dropdownAvatarName');
+    
+    dropdown.classList.toggle('hidden');
+}
 
-        accountButton.addEventListener('click', () => {
-            dropdown.classList.toggle('hidden');
-        });
+// Optional: Close dropdown when clicking outside
+window.onclick = function(event) {
+    if (!event.target.matches('#dropdownAvatarNameButton')) {
+        const dropdown = document.getElementById('dropdownAvatarName');
+        if (!dropdown.classList.contains('hidden')) {
+            dropdown.classList.add('hidden');
+        }
+    }
+}
 
-        // Menutup dropdown jika klik di luar
-        window.addEventListener('click', (event) => {
-            if (!accountButton.contains(event.target) && !dropdown.contains(event.target)) {
-                dropdown.classList.add('hidden');
-            }
-        });
+        
