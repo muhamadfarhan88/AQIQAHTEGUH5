@@ -29,7 +29,7 @@
     </head>
     <body>
         <!--header & navigation-->
-        <header id="home" class = "flex flex-col min-h-screen overflow-hidden bg-center bg-no-repeat bg-cover bg-header-image">
+         <header id="home" class = "relative flex-col min-h-screen overflow-hidden bg-center bg-cover bg-no-repeat bg-header-image">
             <div class = "header-top bg-eerie-black min-h-[48px] flex items-center font-barlow py-3">
                 <div class="container max-w-[1200px] mx-auto lg:flex lg:justify-between">
                     <div class = "flex flex-col items-center header-top-left sm:flex-row sm:justify-center lg:justify-start">
@@ -65,13 +65,18 @@
             </div>
             <div class = "flex flex-1 px-3 header-main">
                 <div class="container max-w-[1200px] mx-auto flex flex-col">
-                    <nav class = "py-5 md:flex md:justify-between">
-                        <div class = "flex justify-between">
-                            <a href = "login.html" class = "flex items-center font-gilda text-[28px] font-normal text-lion"> <img src="../assets/images/logonavbar.png" alt="Logo" class="h-12 md:hidden">Teguh<span class = "text-white">Aqiqah.</span></a>
-                            <button type = "button" class = "text-white md:hidden" id = "navbar-show-btn">
-                                <i class = 'fas fa-bars'></i>
-                            </button>
-                        </div>
+                    <nav class="fixed py-5 z-50 w-full bg-eerie-black/80">
+                        <div class="container max-w-[1200px] px-3">
+                            <div class="flex justify-between md:flex md:justify-between">
+                                <div class="flex justify-between items-center w-full">
+                                    <a href="login.html" class="flex items-center font-gilda text-[28px] font-normal text-lion ">
+                                        <img src="../assets/images/logonavbar.png" alt="Logo" class="h-12">
+                                        Teguh<span class="text-white">Aqiqah.</span>
+                                    </a>
+                                    <button type="button" class="text-white md:hidden ml-auto" id="navbar-show-btn">
+                                        <i class='fas fa-bars me-2 text-2xl'></i>
+                                    </button>
+                                </div>
                         <div class = "navbar-box fixed top-0 right-0 w-[280px] h-full bg-white p-5 flex flex-col items-center font-barlow-cond translate-x-full transition duration-300 ease-in-out md:relative md:translate-x-0 md:bg-transparent md:flex-row md:h-auto md:w-auto md:p-0 z-50">
                             <button type = "button " class = "absolute top-[18px] right-[18px] z-50 text-2xl hover:rotate-180 transition duration-300 ease-in-out md:hidden" id = "navbar-hide-btn">
                                 <i class="fa-solid fa-xmark"></i>
@@ -132,7 +137,7 @@
                             <a href = "login.html" class = "w-full h-[42px] px-7 uppercase flex items-center justify-center bg-lion tracking-widest font-medium text-white mt-4 hover:bg-lion-dark md:mt-0 md:min-w-[140px]">masuk</a>
                         </div>
                     </nav>
-                    <div class="flex flex-col items-center justify-center flex-1 py-12 text-center">
+                    <div class="flex flex-col items-center justify-center flex-1 py-12 my-16 text-center">
                         <h1 class = "text-lg xs:text-[32px] text-white font-gilda tracking-[.04em] uppercase font-normal max-w-[800px] md:text-[42px] leading-relaxed">Momen spesial aqiqah, katering, hingga kurban merupakan hal yang ditunggu-tunggu oleh setiap keluarga.</h1>
                         <a href = "#about-us" class = "min-w-[158px] min-h-[48px] bg-transparent uppercase text-white border-2 font-barlow tracking-widest text-base font-normal inline-flex items-center justify-center mt-9 md:mt-[60px] hover:bg-white hover:text-black transition duration-300 ease-in-out">selengkapnya</a>
                     </div>
@@ -203,7 +208,7 @@
                     <a href = "service.html#pricing" class = "object-cover relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b from-black/25 to-black/75 hover:before before:absolute before:content-[''] before:top-3 before:left-3 before:right-3 before:bottom-3 before:border-white before:border-2 before:border-solid before:z-10 before:opacity-0 hover:before:opacity-100 before:transition before:duration-300 before:ease-in-out">
                         <img src = "../assets/images/aqiqah.jpg" class = "object-cover w-full h-full" alt = "aqiqah">
                         <div class = "absolute bottom-0 z-10 w-full px-4 text-xl font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-2xl font-barlow mb-14">Paket Aqiqah</div>
-                        <div class = "absolute bottom-0 z-10 w-full px-4 text-sm font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-sm font-barlow mb-2 animate-bounce">
+                        <div class = "absolute bottom-0 z-10 w-full px-4 text-sm font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-sm font-barlow mb-4">
                           <i class="fas fa-chevron-down mr-2"></i> KLIK DISINI
                         </div>
                       </a>
@@ -211,7 +216,7 @@
                     <a href = "service.html#pricing" class = "object-cover relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b from-black/25 to-black/75 hover:before  before:absolute before:content-[''] before:top-3 before:left-3 before:right-3 before:bottom-3 before:border-white before:border-2 before:border-solid before:z-10 before:opacity-0 hover:before:opacity-100 before:transition before:duration-300 before:ease-in-out">
                         <img src = "../assets/images/catering.jpg" class = "object-cover w-full h-full" alt = "catering">
                         <div class = "absolute bottom-0 z-10 w-full px-4 text-xl font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-2xl font-barlow mb-14">Paket Catering</div>
-                        <div class = "absolute bottom-0 z-10 w-full px-4 text-sm font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-sm font-barlow mb-2 animate-bounce">
+                        <div class = "absolute bottom-0 z-10 w-full px-4 text-sm font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-sm font-barlow mb-4">
                             <i class="fas fa-chevron-down mr-2"></i> KLIK DISINI
                           </div>
                     </a>
@@ -219,7 +224,7 @@
                     <a href = "service.html#pricing" class = "object-cover relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-b from-black/25 to-black/75 hover:before  before:absolute before:content-[''] before:top-3 before:left-3 before:right-3 before:bottom-3 before:border-white before:border-2 before:border-solid before:z-10 before:opacity-0 hover:before:opacity-100 before:transition before:duration-300 before:ease-in-out">
                         <img src = "../assets/images/qurban.jpg" class = "object-cover w-full h-full" alt = "qurban">
                         <div class = "absolute bottom-0 z-10 w-full px-4 text-xl font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-2xl font-barlow mb-14">Paket Qurban</div>
-                        <div class = "absolute bottom-0 z-10 w-full px-4 text-sm font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-sm font-barlow mb-2 animate-bounce">
+                        <div class = "absolute bottom-0 z-10 w-full px-4 text-sm font-medium tracking-widest text-center text-white uppercase left-2/4 -translate-x-2/4 md:text-sm font-barlow mb-4">
                             <i class="fas fa-chevron-down mr-2"></i> KLIK DISINI
                           </div>
                     </a>
