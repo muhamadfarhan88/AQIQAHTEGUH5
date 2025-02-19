@@ -93,3 +93,4 @@ function signOut() {
     // Example: Redirect to login page
     // window.location.href = '/login';
 }
+
